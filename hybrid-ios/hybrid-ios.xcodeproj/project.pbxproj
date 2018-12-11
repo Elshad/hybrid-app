@@ -12,9 +12,11 @@
 		62F470F421B87FC4002D73D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F470F221B87FC4002D73D0 /* Main.storyboard */; };
 		62F470F621B87FC4002D73D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F470F521B87FC4002D73D0 /* Assets.xcassets */; };
 		62F470F921B87FC4002D73D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F470F721B87FC4002D73D0 /* LaunchScreen.storyboard */; };
+		C92C2973D24C9973E2A6D33C /* Pods_hybrid_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDEA713FF59C111BE36CC06 /* Pods_hybrid_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DD00D6C8F815B711B8B2AE0 /* Pods-hybrid-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hybrid-ios.release.xcconfig"; path = "Target Support Files/Pods-hybrid-ios/Pods-hybrid-ios.release.xcconfig"; sourceTree = "<group>"; };
 		62F470EB21B87FC4002D73D0 /* hybrid-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hybrid-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F470EE21B87FC4002D73D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62F470F021B87FC4002D73D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		62F470F521B87FC4002D73D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62F470F821B87FC4002D73D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62F470FA21B87FC4002D73D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DDEA713FF59C111BE36CC06 /* Pods_hybrid_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hybrid_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7E219098C61FA358360518 /* Pods-hybrid-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hybrid-ios.debug.xcconfig"; path = "Target Support Files/Pods-hybrid-ios/Pods-hybrid-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92C2973D24C9973E2A6D33C /* Pods_hybrid_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3C17C913AEE18D3EB877AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE7E219098C61FA358360518 /* Pods-hybrid-ios.debug.xcconfig */,
+				5DD00D6C8F815B711B8B2AE0 /* Pods-hybrid-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		62F470E221B87FC4002D73D0 = {
 			isa = PBXGroup;
 			children = (
 				62F470ED21B87FC4002D73D0 /* hybrid-ios */,
 				62F470EC21B87FC4002D73D0 /* Products */,
+				4B3C17C913AEE18D3EB877AF /* Pods */,
+				B3C54ED40735A0380BA4F806 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = "hybrid-ios";
 			sourceTree = "<group>";
 		};
+		B3C54ED40735A0380BA4F806 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DDEA713FF59C111BE36CC06 /* Pods_hybrid_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62F470FD21B87FC4002D73D0 /* Build configuration list for PBXNativeTarget "hybrid-ios" */;
 			buildPhases = (
+				F7FE2BCD5751EE8BFB9126A6 /* [CP] Check Pods Manifest.lock */,
 				62F470E721B87FC4002D73D0 /* Sources */,
 				62F470E821B87FC4002D73D0 /* Frameworks */,
 				62F470E921B87FC4002D73D0 /* Resources */,
+				F0CFDAB4391F675D882BA6F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F0CFDAB4391F675D882BA6F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hybrid-ios/Pods-hybrid-ios-frameworks.sh",
+				"${PODS_ROOT}/../../fluttershared/.ios/Flutter/engine/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hybrid-ios/Pods-hybrid-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7FE2BCD5751EE8BFB9126A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hybrid-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62F470E721B87FC4002D73D0 /* Sources */ = {
@@ -280,6 +356,7 @@
 		};
 		62F470FE21B87FC4002D73D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7E219098C61FA358360518 /* Pods-hybrid-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		62F470FF21B87FC4002D73D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD00D6C8F815B711B8B2AE0 /* Pods-hybrid-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

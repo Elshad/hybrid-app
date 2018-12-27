@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import Flutter
 
 class ViewController: UIViewController {
+    var controller: UIViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.backgroundColor = .yellow
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.controller = FlutterViewController(nibName: nil, bundle: nil)
+            self.present(self.controller, animated: true, completion: nil)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            self.controller.dismiss(animated: true, completion: nil)
+        }
     }
 
 

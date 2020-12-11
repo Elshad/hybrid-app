@@ -92,8 +92,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62F470FD21B87FC4002D73D0 /* Build configuration list for PBXNativeTarget "hybrid-ios" */;
 			buildPhases = (
-				62084F9F21BFDBD500D3BF22 /* Flutter Run Script */,
 				F7FE2BCD5751EE8BFB9126A6 /* [CP] Check Pods Manifest.lock */,
+				62084F9F21BFDBD500D3BF22 /* Flutter Run Script */,
 				62F470E721B87FC4002D73D0 /* Sources */,
 				62F470E821B87FC4002D73D0 /* Frameworks */,
 				62F470E921B87FC4002D73D0 /* Resources */,
@@ -367,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP6ML4FK47;
+				ENABLE_BITCODE = YES;
 				FLUTTER_ROOT = /Users/aznix/Development/SDKs/FlutterSDK_1.0.0;
 				INFOPLIST_FILE = "hybrid-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP6ML4FK47;
+				ENABLE_BITCODE = YES;
 				FLUTTER_ROOT = /Users/aznix/Development/SDKs/FlutterSDK_1.0.0;
 				INFOPLIST_FILE = "hybrid-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

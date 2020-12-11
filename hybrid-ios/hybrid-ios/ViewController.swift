@@ -21,6 +21,15 @@ class ViewController: UIViewController {
             let controller = FlutterViewController(nibName: nil, bundle: nil)
             //self.controller.setInitialRoute(<#T##route: String!##String!#>)
             self.navigationController?.pushViewController(controller, animated: true)
+            
+            let channel = FlutterBasicMessageChannel(name: "xsacsd", binaryMessenger: controller, codec: FlutterStringCodec.sharedInstance())
+            channel.sendMessage("csdcsdcsd")
+            controller.send(onChannel: "cdscd", message: nil, binaryReply: { (data: Data?) in
+                
+            })
+            controller.setMessageHandlerOnChannel("cdsd", binaryMessageHandler: { (data: Data?, reply: FlutterBinaryReply) in
+                //data?.subdata(in: <#T##Range<Data.Index>#>)
+            })
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
